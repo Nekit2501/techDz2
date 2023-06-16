@@ -1,3 +1,16 @@
+:root 
+{
+--logo-color3: #000000;
+--logo-color: #2196F3;
+--minibox-logo-color2: #FFFFFF;
+--background-color: #2F303A;
+--text-color: #212121;
+--subtext: #757575;
+--nav-exceptions: #2196F3;
+--footer-tel-gmail:#FFFFFF 60%;
+--white: #FFFFFF;
+}
+
 a {
 text-decoration: none;
 }
@@ -24,7 +37,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: var(--nav-exceptions)
 }
 
 .portfolio
@@ -36,7 +49,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 
-color: #212121;
+color: var(--text-color)
 }
 
 .contacts
@@ -48,7 +61,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 
-color: #212121;
+color: var(--text-color)
 }
 
 .whath_we_do
@@ -61,13 +74,14 @@ line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #212121;
+color: var(--text-color)
 
 }
 
 .herobord
 {
-background: #2F303A;}
+background: var(--background-color);
+}
 
 .herotxt
 {
@@ -79,12 +93,12 @@ line-height: 60px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--white)
 }
 
 .herobutt
 {
-background: #2196F3;
+background: var(--nav-exceptions);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px
 }
@@ -100,7 +114,7 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 
-color: #FFFFFF;
+color: var(--white);
 }
 
 .features_text
@@ -121,17 +135,14 @@ font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--text-color);
 }
 
 .Igor
 {
 background: url(4853.jpg);
 border-radius: 0px;
-
-background: #FFFFFF;
-background: #FFFFFF;
-
+background: var(--minibox-logo-color3);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
@@ -139,7 +150,7 @@ border-radius: 0px 0px 4px 4px;
 .Olga
 {
 border-radius: 0px;
-background: #FFFFFF;
+background: var(--minibox-logo-color3);
 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -151,7 +162,7 @@ border-radius: 0px 0px 4px 4px;
 border-radius: 0px;
 background: #F5F4FA;
 
-background: #FFFFFF;
+background: var(--minibox-logo-color3);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
@@ -160,7 +171,7 @@ border-radius: 0px 0px 4px 4px;
 {
 border-radius: 0px;
 
-background: #FFFFFF;
+background: var(--minibox-logo-color3);
 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -190,12 +201,12 @@ line-height: 19px;
 
 letter-spacing: 0.03em;
 
-color: #757575;
+color: var(--subtext);
 }
 
 .Footer
 {
-background: #2F303A;
+background: var(--background-color);
 }
 
 .address
@@ -208,7 +219,7 @@ line-height: 24px;
 
 letter-spacing: 0.03em;
 
-color: #FFFFFF;
+color: var(--minibox-logo-color2);
 
 }
 
@@ -221,7 +232,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: var(--nav-exceptions);
 }
 
 .gmail-footer
@@ -233,7 +244,7 @@ font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
 
-color: rgba(255, 255, 255, 0.6);
+color: var(--footer-tel-gmail);
 
 }
 
@@ -247,16 +258,16 @@ line-height: 31px;
 
 letter-spacing: 0.03em;
 
-color: #2196F3;
+color: var(--logo-color);
 }
 
 .logo2{
-color: #FFFFFF;
+color: var(--minibox-logo-color2);
 }
 
 .logo3
 {
-color: #000000;
+color: var(--logo-color3);
 }
 
 .tel-hero
@@ -268,7 +279,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 
-color: #757575;
+color: var(--subtext);
 }
 
 .tel_footer
@@ -281,5 +292,5 @@ line-height: 24px;
 
 letter-spacing: 0.03em;
 
-color: rgba(255, 255, 255, 0.6);
+color: var(--footer-tel-gmail);
 }
