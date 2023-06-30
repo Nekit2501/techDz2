@@ -22,17 +22,15 @@
       <!-- блок навігації -->
       <nav>
         <!-- список навігаційних елементів -->
-        <ul>
+        <ul class="nav_location">
           <li><a class="studio" href="">Студія</a></li>
           <li><a class="portfolio" href="">Портфоліо</a></li>
           <li><a class="contacts" href="">Контакти</a></li>
-        </ul>
-      </nav>
       <!-- список контактів -->
-      <ul>
         <li><a class="gmail-hero" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:380961111111" class="tel-hero">+38 096 111 11 11</a></li>
-    </ul>
+      </ul>
+  </nav>
     </header>
 
     <main>
@@ -42,9 +40,10 @@
         <button class="herobutt"><span class="txtbut"> Замовити послугу</span></button>
     </section>
     <!-- особливості -->
-    <section id="2">
-      <h2>особливості</h2>
-    <ul>
+    <section class="features">
+      <h2 class="visually-hidden">особливості</h2>
+      <div class="container">
+    <ul class="features">
         <li><p class="features_text">УВАГА ДО ДЕТАЛЕЙ</p></li>
         <li><p class="features_content">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
         <li><p class="features_text">ПУНКТУАЛЬНІСТЬ</p></li>
@@ -54,12 +53,13 @@
         <li><p class="features_text">СУЧАСНІ ТЕХНОЛОГІЇ</p></li>
         <li><p class="features_content">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
     </ul>
+  </div>
     </section>
     <!-- about -->
 
     <section id="1">
         <h2 class="whath_we_do">Чим ми займаємося</h2>
-        <ul>
+        <ul class="img_whath_we_do">
         <li><img src="./img3.jpg" alt="" width="370" height="294"/></li>
         <li><img src="./img2.jpg" alt="" width="370" height="294"/></li>
         <li><img src="./img1.jpg" alt="" width="370" height="294"/></li>
@@ -67,7 +67,7 @@
     </section>
     <section id="we">
       <h2 class="myteam">Наша команда</h2>
-      <ul>
+      <ul class="we_content">
         <li class="Igor"><img src="img4.jpg" alt="" width="270" height="260"><h3 class="team_member_name">Ігор Дем'яненко</h3><p class="position">Product Designer</p></li>
         <li class="Olga"><img src="img7.jpg" alt="" width="270" height="260"><h3 class="team_member_name">Ольга Рєпіна</h3><p class="position">Frontend Developer</p></li>
         <li class="Mikola" ><img src="img6.jpg" alt="" width="270" height="260"><h3 class="team_member_name">Микола Тарасов</h3><p class="position">Marketing</p></li>

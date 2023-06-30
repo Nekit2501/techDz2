@@ -1,3 +1,11 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
 :root 
 {
 --logo-color3: #000000;
@@ -11,6 +19,27 @@
 --white: #FFFFFF;
 }
 
+.visually-hidden 
+{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+
+outline: 0;
+outline-offset: 0;
+
+visibility: hidden;
+pointer-events: none;
+}
+
 a {
 text-decoration: none;
 }
@@ -20,12 +49,22 @@ li, ul
 list-style-type: none;
 }
 
+.container
+{
+max-width: 1200px;
+padding: 15px;
+margin: 0 auto;
+}
+
 .features_content
 {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+
+display: flex;
+flex-direction: row;
 }
 
 .studio
@@ -81,10 +120,13 @@ color: var(--text-color);
 .herobord
 {
 background: var(--background-color);
+padding-top: 195px;
+padding-bottom: 210px;
 }
 
 .herotxt
 {
+width: 696px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
@@ -95,22 +137,26 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--white);
 
-margin-right: 250px;
-margin-bottom: 10px;
-margin-left: 250px ;
+margin: 0 auto;
+margin-bottom: 35px;
 }
 
 .herobutt
 {
+text-align: center;
+width: 216px;
+height: 50px;
 background: var(--nav-exceptions);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 
-margin-left: 560px;
-margin-bottom: 120px;
+display: block;
+margin: 0 auto;
+padding-left: 32px;
 }
 
 .txtbut{
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -131,6 +177,9 @@ font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
+
+display: flex;
+flex-direction: row;
 }
 
 .myteam
@@ -306,4 +355,28 @@ letter-spacing: 0.03em;
 color: var(--footer-tel-gmail);
 
 margin-left: 80px;
+}
+
+.features
+{
+display: flex;
+flex-direction: row;
+}
+
+.nav_location
+{
+display: flex;
+flex-direction: row;
+}
+
+.img_whath_we_do
+{
+display: flex;
+flex-direction: row;
+}
+
+.we_content
+{
+display: flex;
+flex-direction: row;
 }
